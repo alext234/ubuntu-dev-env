@@ -8,7 +8,7 @@ docker.pkg.github.com/alext234/ubuntu-dev-env/dev-env:latest
 ```
 
 
-## What's inside the buit docker image
+## What's inside the docker image
 
 * vscode (accessible via browser at port `8080`)
 * flutter 
