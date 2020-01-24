@@ -17,8 +17,6 @@ RUN flutter channel master
 RUN flutter upgrade 
 RUN flutter config --enable-web
 
-WORKDIR /home/coder
-
 # persistent flutter so users don't lose updates
 VOLUME /home/coder/flutter
 
