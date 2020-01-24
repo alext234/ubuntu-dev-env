@@ -4,12 +4,9 @@ services:
     ubuntu:
         image: docker.pkg.github.com/alext234/ubuntu-dev-env/dev-env:latest
         volumes:
-            - "${PWD}:/home/coder/project"
-            - "${HOME}/.local/share/code-server:/home/coder/.local/share/code-server"
+            - "./:/home/coder"
+            - "~/.local/share/code-server:/home/coder/.local/share/code-server"
         ports: 
             - "8888:8888"
             - "9999:9999"
-            - "8080:8080"
-            
-   
-
+            - "8088:8080"
