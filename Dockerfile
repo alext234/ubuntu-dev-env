@@ -15,7 +15,7 @@ ENV PATH="${FLUTTER_ROOT}/bin:${PATH}"
 RUN flutter channel master
 RUN flutter config --enable-web
 RUN flutter upgrade 
-RUN flutter precache
+RUN flutter precache --web --no-android --no-ios
 
 
 # persistent flutter so users don't lose updates
