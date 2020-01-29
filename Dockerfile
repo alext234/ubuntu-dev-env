@@ -9,8 +9,7 @@ USER coder
 
 # install flutter 
 ENV FLUTTER_ROOT="/home/coder/flutter"
-ENV FLUTTER_VERSION="v1.9.1+hotfix.4"
-RUN git clone --branch $FLUTTER_VERSION https://github.com/flutter/flutter "${FLUTTER_ROOT}"
+RUN git clone https://github.com/flutter/flutter "${FLUTTER_ROOT}"
 ENV PATH="${FLUTTER_ROOT}/bin:${PATH}"
 # switch to the tip of tree channel; also enable flutter web
 RUN flutter channel master
